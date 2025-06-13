@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Books Read</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style2.css" />
+</head>
+<body>
+  <div class="books-container">
+    <% for(let book of allbooks){ %>
+      <div class="book-card">
+        <img class="book-cover" src="<%= book.image %>" alt="<%= book.title %> book cover">
+        <div class="book-content">
+          <div class="book-title"><%= book.title %></div>
+          <div class="book-author">by <%= book.author %></div>
+          <div class="book-meta">
+            <strong>Date read:</strong> 2023-08-02.<br>
+            <strong>How strongly I recommend it:</strong> <%= book.rating %>/10
+          </div>
+          <div class="book-notes">
+            <%= book.para %>
+          </div>
+        </div>
+      </div>
+    <% } %>
+  </div>
+</body>
+
+</html>

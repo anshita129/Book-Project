@@ -1,0 +1,89 @@
+body {
+    background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .add-book-form {
+    background: rgba(255,255,255,0.95);
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(60,60,100,0.15);
+    padding: 40px 32px 32px 32px;
+    width: 400px;
+    max-width: 95vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 32px;
+    letter-spacing: 1px;
+    color: #3a3a3a;
+    text-align: center;
+  }
+  .form-row {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    margin-bottom: 18px;
+  }
+  .form-row.single {
+    flex-direction: column;
+    gap: 0;
+  }
+  .form-input, .form-textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1.5px solid #b8b8b8;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-bottom: 0;
+    background: #f7f9fa;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+    color: #222;
+  }
+  .form-input:focus, .form-textarea:focus {
+    border-color: #8ec5fc;
+    box-shadow: 0 2px 12px rgba(142,197,252,0.12);
+    background: #fff;
+  }
+  .form-textarea {
+    min-height: 120px;
+    max-height: 220px;
+    resize: vertical;
+    font-size: 1.05rem;
+    margin-bottom: 0;
+  }
+  .submit-btn {
+    margin-top: 28px;
+    width: 100%;
+    padding: 14px 0;
+    font-size: 1.1rem;
+    background: linear-gradient(90deg, #a1c4fd 0%, #c2e9fb 100%);
+    border: none;
+    border-radius: 12px;
+    color: #333;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 12px rgba(142,197,252,0.18);
+    transition: background 0.2s, transform 0.1s;
+  }
+  .submit-btn:hover {
+    background: linear-gradient(90deg, #c2e9fb 0%, #a1c4fd 100%);
+    transform: translateY(-2px) scale(1.03);
+  }
+  @media (max-width: 500px) {
+    .add-book-form {
+      padding: 18px 6vw 20px 6vw;
+      width: 98vw;
+    }
+    .form-heading {
+      font-size: 1.3rem;
+    }
+  }

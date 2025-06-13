@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add a Book</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style3.css" /> 
+</head>
+<body>
+  <form class="add-book-form" method="POST" action="/addbook" autocomplete="off">
+    <div class="form-heading">ADD A BOOK</div>
+
+    <div class="form-row single">
+      <input class="form-input" type="text" name="title" placeholder="TITLE" required>
+    </div>
+
+    <div class="form-row">
+      <input class="form-input" type="text" name="author" placeholder="AUTHOR" required>
+      <input class="form-input" type="date" name="date_read" placeholder="DATE OF READING" required>
+    </div>
+
+    <div class="form-row single">
+        <textarea class="form-textarea" name="notes" placeholder="add notes" required></textarea>
+      </div>
+  
+      <div class="form-row single">
+        <input class="form-input" type="url" name="cover_url" placeholder="Image cover url">
+      </div>
+      <div class="form-row single">
+        <input class="form-input" type="number" name="rating" min="1" max="10" placeholder="Recommendations out of 10" required>
+      </div>
+  
+      <button class="submit-btn" type="submit">Submit</button>
+    </form>
+  </body>
+  </html>
